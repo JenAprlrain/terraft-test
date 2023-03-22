@@ -1,38 +1,280 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.mint-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.connect-wallet {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+
+.mint-section {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
+}
+
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #39ff14;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.slider-button:hover {
+  background-color: #32cd32;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #39ff14;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #32cd32;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.planets {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.planet {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.planet-info {
+  text-align: center;
+}
+
+.page-title {
+  color: #39ff14;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.planet1logo {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+.reward-info {
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  font-size: 1vw;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.planet1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.back-to-base {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+  z-index: 1000;
+  width: 200px;
+}
+
+.base-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 12px;
+  background-color: #39ff14;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.nft-images {
+  border: 3px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.nft-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #1c1c1c;
+  border: 3px solid #32cd32;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nft-image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.nft-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.staking-page {
+  position: relative;
+}
+
+.nft-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1000px;
+  position: relative;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 3px;
+  min-height: 150px;
+}
+
+.nft-card:hover {
+  transform: scale(1.1);
+}
+
+.inventory-title {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: white;
+}
+
+.stake-info {
+  position: absolute;
+  top: 31%;
+  left: 7%;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.stake-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+}
+
+.stake-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.stake-buttons button {
+  font-size: 15px;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.claim-rewards {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.claim-rewards button {
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 0 5px;
 }
